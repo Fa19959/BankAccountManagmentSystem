@@ -18,7 +18,14 @@ namespace BankAccountManagmentSystem
         //constructor dose not have return type, its same the class name
         //So this is will create a copy of the class , now we want to add value to the attribute above
         //This 2 parameter will take the value from the user (function take the parameter from the user or return to the program)
-        public BankAccount(string accountNumber, string accountHolderName) { 
+        public BankAccount(string accountNumber, string accountHolderName) {
+           /*if we write the same name of the attributes that we define in the program
+            * and the parameter which is in constructor you will have problem
+            * so we can differentiate between them using (This) keyword this will let 
+            * you know that its from the class itself
+           */
+            this.AccountNumber = accountNumber;
+            this.AccountHolderName = accountHolderName;
         }
     }
 }
