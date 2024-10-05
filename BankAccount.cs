@@ -80,7 +80,9 @@ namespace BankAccountManagmentSystem
             }
         }
         public void GetAccountInfo() { 
-            Console.WriteLine(" The ")
+            Console.WriteLine(" The account number is :"+ AccountNumber);
+            Console.WriteLine(" The account holder is :" + AccountHolderName);
+            Console.WriteLine(" The Current balance is :" + Balance);
         }
 
     }
