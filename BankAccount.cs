@@ -59,5 +59,30 @@ namespace BankAccountManagmentSystem
             }
 
         }
+
+        //void we dont expect to return anythings!, something will be done on the system
+        //we should give the amoute that we want it (decimal amount)
+        // its ok to writhe same name of parameters because it is on different scope
+        public void Withdraw(decimal amount)
+        {
+
+            //this is the functionallity of Withdraw, but may this will do mistakes 
+            // so we should write if statment to check
+            if (Balance >= amount && amount > 0)
+            {
+                Balance -= amount;
+                Console.WriteLine("The amount of" + amount + "Withdraw successfully");
+                Console.WriteLine("The new balance eqauls :" + Balance);
+            }
+            else
+            {
+
+            }
+        }
+        public void GetAccountInfo() { 
+            Console.WriteLine(" The ")
+        }
+
     }
+    
 }
