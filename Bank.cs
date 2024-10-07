@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BankAccountManagmentSystem
 {
-    internal class Bank
+    public class Bank
     {
+        private string BankName = "Bank Muscat";
+        public List<BankAccount> BankAccounts = new List<BankAccount>();
     }
 }
