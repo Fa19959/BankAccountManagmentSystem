@@ -9,6 +9,6 @@ namespace BankAccountManagmentSystem
     public class Bank
     {
         private string BankName = "Bank Muscat";
-        public List<BankAccount> BankAccounts = new List<BankAccount>();
+        public List<BankAccount> BankAccounts {  get; set; }
     }
 }
